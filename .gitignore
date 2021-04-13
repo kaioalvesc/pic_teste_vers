@@ -1,0 +1,15 @@
+# Terraform components
+*terraform*
+
+# Virtual Environment
+env/
+
+# AWS Security Keys
+aws-keys.*
+
+# ZIP files
+*.zip
+!python.zip
+
+# Jupyter stuff
+.ipynb_checkpoints

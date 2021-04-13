@@ -1,0 +1,13 @@
+# Terraform components
+*terraform*
+
+# Virtual Environment
+env/
+
+# AWS Security Keys
+aws-keys.*
+
+
+
+# Jupyter stuff
+.ipynb_checkpoints

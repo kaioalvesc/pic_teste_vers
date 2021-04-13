@@ -17,7 +17,6 @@ resource "aws_lambda_function" "lambda_cleaning_pic" {
   function_name    = "api_lambda_processor_cleaning"
   role             = var.picpay_role_teste_arn
   handler          = "lambda_cleaning_pic.lambda_handler"
-  source_code_hash = filebase64sha256("${path.module}/lambda_cleaning_pic.zip")
   runtime = "python3.6"
   timeout       = 60
 }

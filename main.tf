@@ -70,6 +70,3 @@ module "glue-pic" {
   ]
 
 }
-
-
-

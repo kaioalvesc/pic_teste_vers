@@ -21,7 +21,7 @@ resource "aws_glue_crawler" "cleaned_crawler" {
   )
 
   s3_target {
-    path = "s3://picpay-bucket-kaio-cleaned8/"
+    path = "s3://${var.picpay_s3_bucket_name}/"
   }
 }
 
@@ -30,3 +30,6 @@ variable "picpay_role_teste_arn" {
   description = "role ARN"
 }
 
+variable "picpay_s3_bucket_name" {
+  description = "Cleaned bucket name"  
+}

@@ -1,0 +1,1 @@
+terraform destroy -var-file="aws-keys.tfvars" -auto-approve

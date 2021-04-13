@@ -60,6 +60,7 @@ module "cloudwatch-pic" {
 module "glue-pic" {
   source                = "./glue-pic"
   picpay_role_teste_arn = module.role-pic.picpay_role_teste_arn
+  picpay_s3_bucket_name = module.s3-bucket-pic.picpay_aws_s3_cleaned_name
   depends_on = [
     module.role-pic,
     module.lambda-pic,

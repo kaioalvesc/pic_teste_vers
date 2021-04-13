@@ -6,16 +6,17 @@
 resource "aws_kinesis_firehose_delivery_stream" "cleaned_s3_stream" {
   name        = "terraform-kinesis-firehose-cleaned-s3"
   destination = "extended_s3"
-  
+
   kinesis_source_configuration {
     kinesis_stream_arn = aws_kinesis_stream.kinesis_picpay_testeapi.arn
-    role_arn = var.picpay_role_teste_arn
+    role_arn           = var.picpay_role_teste_arn
   }
   extended_s3_configuration {
-    buffer_size = 64
-    role_arn   = var.picpay_role_teste_arn
-    bucket_arn = var.picpay_aws_s3_cleaned_arn
-  
+    buffer_size     = 1
+    buffer_interval = 60
+    role_arn        = var.picpay_role_teste_arn
+    bucket_arn      = var.picpay_aws_s3_cleaned_arn
+
 
     processing_configuration {
       enabled = "true"
@@ -35,15 +36,17 @@ resource "aws_kinesis_firehose_delivery_stream" "cleaned_s3_stream" {
 
 resource "aws_kinesis_firehose_delivery_stream" "kinesis_raw_pic" {
   name        = "terraform-kinesis-firehose-s3"
-  destination = "s3"
+  destination = "extended_s3"
 
   kinesis_source_configuration {
     kinesis_stream_arn = aws_kinesis_stream.kinesis_picpay_testeapi.arn
-    role_arn = var.picpay_role_teste_arn
+    role_arn           = var.picpay_role_teste_arn
   }
-  s3_configuration {
-    role_arn   = var.picpay_role_teste_arn
-    bucket_arn = var.picpay_aws_s3_raw_arn
+  extended_s3_configuration {
+    buffer_size     = 1
+    buffer_interval = 60
+    role_arn        = var.picpay_role_teste_arn
+    bucket_arn      = var.picpay_aws_s3_raw_arn
   }
 
 }

@@ -5,8 +5,8 @@
 
 provider "aws"{
     region= "us-east-1"
-    access_key = "AKIA42JKFRYAZUNK3N77"
-    secret_key = "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"
+    access_key = "zzx"
+    secret_key = "zzx"
 }
 
 module "role-pic"{

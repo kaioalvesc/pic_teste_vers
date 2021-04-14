@@ -24,6 +24,8 @@ resource "aws_s3_bucket" "cleaned" {
   }
 }
 
+#Decaraçao de Output
+
 output "picpay_aws_s3_raw_arn" {
   value       = aws_s3_bucket.raw.arn
   description = "s3 bucket cleaned."

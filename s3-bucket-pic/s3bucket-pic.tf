@@ -24,6 +24,19 @@ resource "aws_s3_bucket" "cleaned" {
   }
 }
 
+
+resource "aws_s3_bucket" "picpay-athena-stage-bucket2" {
+  bucket        = "picpay-athena-stage-bucket2"
+  acl           = "private"
+  force_destroy = true
+
+  tags = {
+    Name        = "cleaned"
+    Environment = "picteste"
+  }
+}
+
+
 #Decaraçao de Output
 
 output "picpay_aws_s3_raw_arn" {

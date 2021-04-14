@@ -3,12 +3,15 @@
 #Versão: 1 
 #Desenvolvedor: Kaio Alves Chaves
 
+#Construcao de acesso
 provider "aws" {
   access_key = var.access_key
   secret_key = var.secret_key
   region     = var.region
 }
 
+
+#Modulos
 module "role-pic" {
   source = "./role-pic"
 }

@@ -1,4 +1,4 @@
-#Descrição: Codigo criacao de buckets teste TerraForm PicPay 
+#Descrição: Codigo criacao de Kinesis Stream teste TerraForm PicPay 
 #Data: 07-04-2021 
 #Versão: 1 
 #Desenvolvedor: Kaio Alves Chaves
@@ -14,8 +14,4 @@ resource "aws_kinesis_stream" "kinesis_picpay_testeapi" {
     "IncomingBytes",
     "OutgoingBytes",
   ]
-
-  tags = {
-    Environment = "picteste"
-  }
 }

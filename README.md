@@ -46,7 +46,7 @@
 ## Projeto
 
  <a href="https://github.com/kaioalvesc/pic_teste_vers">
-    <img src="README/arquitetura.png" alt="arquitetura" width="800" height="280">
+    <img src="README/arquitetura1.png" alt="arquitetura" width="800" height="280">
  </a>
 
 
@@ -57,9 +57,9 @@ Stream que terá 2 consumidores.
 
 ### Tecnologias
 
-* [https://www.terraform.io/](Terraform)
-* [https://www.python.org/](Python)
-* [https://aws.amazon.com/pt/](AWS)
+* [Terraform](https://www.terraform.io/)Terraform
+* [Python](https://www.python.org/)
+* [AWS](https://aws.amazon.com/pt/)
 
 
 

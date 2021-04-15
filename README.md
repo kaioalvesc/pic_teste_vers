@@ -19,9 +19,9 @@
   <summary><h2 style="display: inline-block">Indice</h2></summary>
   <ol>
     <li>
-      <a href="#about-the-project">Projeto</a>
+      <a href="#Projeto">Projeto</a>
       <ul>
-        <li><a href="#built-with">Tecnologias</a></li>
+        <li><a href="#Tecnologias">Tecnologias</a></li>
       </ul>
     </li>
     <li>
@@ -42,21 +42,26 @@
 
 
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+<!-- Sobre o Projeto -->
+## Projeto
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
+ <a href="https://github.com/kaioalvesc/pic_teste_vers">
+    <img src="README/arquitetura.png" alt="arquitetura" width="800" height="280">
+ </a>
 
 
-### Built With
+O desafio consiste em implementar uma arquitetura completa que consome a Punk Api no
+endpoint https://api.punkapi.com/v2/beers/random e ingere em um Kinesis
+Stream que terá 2 consumidores.
 
-* []()
-* []()
-* []()
+
+### Tecnologias
+
+* [https://www.terraform.io/](Terraform)
+* [https://www.python.org/](Python)
+* [https://aws.amazon.com/pt/](AWS)
+
+
 
 
 

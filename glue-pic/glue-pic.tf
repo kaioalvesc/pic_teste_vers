@@ -19,9 +19,6 @@ resource "aws_glue_catalog_database" "data_base_glue" {
   name = "data_base_glue"
 }
 
-resource "aws_glue_catalog_database" "metastore" {
-  name = "hive-metastore"
-}
 
 resource "aws_glue_crawler" "cleaned_crawler" {
   database_name = aws_glue_catalog_database.data_base_glue.name

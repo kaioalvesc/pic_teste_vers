@@ -69,7 +69,7 @@ Stream que terá 2 consumidores.
 
 
 <!-- Execução -->
-### Execução 
+## Execução 
 
 Para Conseguir executar a criação do ambiente vc deve ter o terraform instalado e um usuário IAM, e gerar uma chave secreta para o usuário
 
@@ -156,3 +156,7 @@ Link do Projeto: [https://github.com/kaioalvesc/pic_teste_vers](https://github.c
 ● https://www.youtube.com/watch?v=5WykrpB7qS4
 
 ● https://www.youtube.com/watch?v=7mBo6pT09RM
+
+
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/kaioalvesc/

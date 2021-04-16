@@ -25,7 +25,7 @@
       </ul>
     </li>
     <li>
-      <a href="Execução">Execução</a>
+      <a href="#Execução">Execução</a>
       <ul>
         <li><a href="#Pré-requisitos">Pré Requisitos</a></li>
         <li><a href="#Instalação">Instalação</a></li>

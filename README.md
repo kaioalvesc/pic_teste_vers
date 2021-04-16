@@ -31,12 +31,15 @@
         <li><a href="#Instalação">Instalação</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Material de referencia</a></li>
+    <li>
+        <a href="#Modelo">Modelo</a>
+        <ul>
+            <li><a href="#Métodos-Testados">Métodos Testados</a></li>
+            <li><a href="#Resultado">Resultados</a></li>
+       </ul>
+    </li>
+    <li><a href="#Contato">Contato</a></li>
+    <li><a href="#Referências">Referências</a></li>
   </ol>
 </details>
 
@@ -105,67 +108,47 @@ Segue a lista de acessos necessários para o usuário.
    ```
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
+<!-- Modelo -->
+## Modelo
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+O modelo de machine learning foi criado com base no database cleaned com o objetivo de predizer o valor do ibus, ibus siguinifica International Bitterness Units("Unidade Internacional de amargura") e é uma escala precisa para medir o amargor da cerveja.
 
 
 
-<!-- ROADMAP -->
-## Roadmap
+<!-- Métodos Testados -->
+### Métodos Testados 
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues).
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. Regressão linear
+   ```sh
+   Em estatística, regressão linear é uma equação para se estimar a condicional de uma variável y, dados os valores de algumas outras variáveis x. A regressão, em geral, tem como objectivo tratar de um valor que não se consegue estimar inicialmente.
+   ```
+2. Random forest
+   ```sh
+   Este nome explica muito bem o funcionamento do algoritmo, que irá criar muitas árvores de decisão, de maneira aleatória, formando o que podemos enxergar como uma floresta, onde cada árvore será utilizada na escolha do resultado final
+   ```
 
 
 
-<!-- LICENSE -->
-## License
+<!-- Resultado -->
+### Resultado
 
-Distributed under the MIT License. See `LICENSE` for more information.
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Entre os modelos comparados o que apresentou melhor resultado foi o Random Forest que apresentou ao mesmo tempo o maior R2 e o menor Erro quadrado médio.
 
 
+<!-- Contato -->
+## Contato
 
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
+Kaio Alves Chaves: email-kaioalvesc@hotmail.com  
 
-* []()
-* []()
-* []()
+Link do Projeto: [https://github.com/kaioalvesc/pic_teste_vers](https://github.com/kaioalvesc/pic_teste_vers)
 
 
 
+<!-- Referências -->
+## Referências:
 
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/github_username
+● https://registry.terraform.io/browse?provider=aws
+● https://serverless.com/examples/aws-java-simple-http-endpoint/
+● https://www.youtube.com/watch?v=wgzgVm7Sqlk
+● https://www.youtube.com/watch?v=5WykrpB7qS4
+● https://www.youtube.com/watch?v=7mBo6pT09RM

@@ -148,7 +148,11 @@ Link do Projeto: [https://github.com/kaioalvesc/pic_teste_vers](https://github.c
 ## Referências:
 
 ● https://registry.terraform.io/browse?provider=aws
+
 ● https://serverless.com/examples/aws-java-simple-http-endpoint/
+
 ● https://www.youtube.com/watch?v=wgzgVm7Sqlk
+
 ● https://www.youtube.com/watch?v=5WykrpB7qS4
+
 ● https://www.youtube.com/watch?v=7mBo6pT09RM

@@ -2,6 +2,14 @@
 #Data: 09-04-2021 
 #Versão: 1 
 #Desenvolvedor: Kaio Alves Chaves
+
+#Decaraçao de variaveis
+variable "picpay_role_teste_arn" {
+  description = "role ARN"
+}
+
+
+
 resource "aws_lambda_function" "lambda_function" {
   filename      = "${path.module}/lambda_function.zip"
   function_name = "api_lambda_processor"
@@ -9,6 +17,10 @@ resource "aws_lambda_function" "lambda_function" {
   handler       = "lambda_function.lambda_handler"
   runtime = "python3.6"
   timeout       = 60
+
+    tags = {
+    Environment = "picteste"
+  }
 }
 
 
@@ -19,13 +31,14 @@ resource "aws_lambda_function" "lambda_cleaning_pic" {
   handler          = "lambda_cleaning_pic.lambda_handler"
   runtime = "python3.6"
   timeout       = 60
+
+    tags = {
+    Environment = "picteste"
+  }
 }
 
-variable "picpay_role_teste_arn" {
-  description = "role ARN"
-}
 
-
+#Decaraçao de output
 
 output "lambda_function_arn" {
   value       = aws_lambda_function.lambda_function.arn

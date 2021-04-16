@@ -216,6 +216,7 @@ resource "aws_iam_role_policy_attachment" "picpay_teste_role_attach" {
   
 }
 
+#Decaraçao de output
 
 output "picpay_role_teste_arn" {
   value       = aws_iam_role.picpay_role_teste.arn

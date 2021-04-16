@@ -25,10 +25,10 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Execução</a>
+      <a href="Execução">Execução</a>
       <ul>
-        <li><a href="#prerequisites">Pré Requisitos</a></li>
-        <li><a href="#installation">Instalação</a></li>
+        <li><a href="#Pré-requisitos">Pré Requisitos</a></li>
+        <li><a href="#Instalação">Instalação</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -57,7 +57,7 @@ Stream que terá 2 consumidores.
 
 ### Tecnologias
 
-* [Terraform](https://www.terraform.io/)Terraform
+* [Terraform](https://www.terraform.io/)
 * [Python](https://www.python.org/)
 * [AWS](https://aws.amazon.com/pt/)
 
@@ -65,30 +65,44 @@ Stream que terá 2 consumidores.
 
 
 
-<!-- GETTING STARTED -->
-## Getting Started
+<!-- Execução -->
+## Execução
 
-To get a local copy up and running follow these simple steps.
+Para Conseguir executar a criação do ambiente vc deve ter o terraform instalado e um usuário IAM, e gerar uma chave secreta para o usuário
 
-### Prerequisites
+### Pré-requisitos
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+Segue a lista de acessos necessários para o usuário.
+* IAM
   ```sh
-  npm install npm@latest -g
+  IAMFullAccess
+  AmazonAthenaFullAccess
+  AmazonKinesisFirehoseFullAccess
+  AmazonKinesisFirehoseFullAccess
+  CloudWatchEventsFullAccess
+  AmazonS3FullAccess
+  CloudWatchFullAccess
+  AmazonAthenaFullAccess
+  AWSGlueServiceRole
+  AmazonKinesisFullAccess
+  AWSLambda_FullAccess
   ```
 
-### Installation
+### Instalação
 
-1. Clone the repo
+1. Copiando Repositório
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/kaioalvesc/pic_teste_vers.git
    ```
-2. Install NPM packages
+2. Criar arquivo aws-keys.tfvars no diretório Base do Projeto
    ```sh
-   npm install
+   access_key="SUA CHAVE DE ACESSO"
+   secret_key="SUA CHAVE SECRETA"
    ```
-
+3. Após isso executar o comando abaixo 
+   ```sh
+    terraform apply -var-file="aws-keys.tfvars" -auto-approve
+   ```
 
 
 <!-- USAGE EXAMPLES -->

@@ -3,7 +3,7 @@
 #Versão: 1 
 #Desenvolvedor: Kaio Alves Chaves
 resource "aws_s3_bucket" "raw" {
-  bucket        = "picpay-bucket-kaio-raw"
+  bucket        = "picpay-bucket-kaio-raw2"
   acl           = "private"
   force_destroy = true
 
@@ -14,7 +14,7 @@ resource "aws_s3_bucket" "raw" {
 }
 
 resource "aws_s3_bucket" "cleaned" {
-  bucket        = "picpay-bucket-kaio-cleaned"
+  bucket        = "picpay-bucket-kaio-cleaned2"
   acl           = "private"
   force_destroy = true
 
@@ -26,7 +26,7 @@ resource "aws_s3_bucket" "cleaned" {
 
 
 resource "aws_s3_bucket" "picpay-athena-stage-bucket2" {
-  bucket        = "picpay-athena-stage-bucket2"
+  bucket        = "picpay-athena-stage-bucket3"
   acl           = "private"
   force_destroy = true
 

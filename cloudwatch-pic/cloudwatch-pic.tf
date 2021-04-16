@@ -4,7 +4,7 @@
 #Desenvolvedor: Kaio Alves Chaves
 resource "aws_cloudwatch_event_rule" "cloudwatch_dispara_pic" {
   name = "cloudwatch_dispara_pic"
-  schedule_expression = "rate(5 minute)"
+  schedule_expression = "rate(5 minutes)"
 }
 
 resource "aws_cloudwatch_event_target" "cloudwatch_dispara" {

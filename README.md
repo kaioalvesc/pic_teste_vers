@@ -25,7 +25,7 @@
       </ul>
     </li>
     <li>
-      <a href="Execução">Execução</a>
+      <a href="Subindo-Infra">Subindo-Infra</a>
       <ul>
         <li><a href="#Pré-requisitos">Pré Requisitos</a></li>
         <li><a href="#Instalação">Instalação</a></li>
@@ -68,8 +68,8 @@ Stream que terá 2 consumidores.
 
 
 
-<!-- Execução -->
-## Execução
+<!-- Subindo-Infra -->
+## Subindo-Infra
 
 Para Conseguir executar a criação do ambiente vc deve ter o terraform instalado e um usuário IAM, e gerar uma chave secreta para o usuário
 

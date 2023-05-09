@@ -9,7 +9,7 @@
     <img src="README/pic-logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Desafio - Machine Learning Platform Engineer</h3>
+  <h3 align="center">Aplicando Terraform</h3>
 </p>
 
 

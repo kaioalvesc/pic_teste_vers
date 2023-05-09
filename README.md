@@ -6,7 +6,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/kaioalvesc/pic_teste_vers">
-    <img src="README/terraformio-ar21.png" alt="Logo" width="1000" height="500">
+    <img src="README/terraformio-ar21.png" alt="Logo" width="500" height="240">
   </a>
 
   <h3 align="center">Aplicando Terraform</h3>
